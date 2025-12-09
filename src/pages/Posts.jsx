@@ -49,13 +49,13 @@ export default function Posts() {
     <Layout>
       {loading && <Loader />}
       <div className="max-w-sm md:max-w-md lg:max-w-lg mx-auto bg-white/80 backdrop-blur-md p-6 rounded-xl shadow-lg border border-white/30">
-        <h2 className="text-xl font-bold">My Posts</h2>
+        <h2 className="text-xl font-bold mb-2">My Posts</h2>
         <PostForm onSubmit={createPost} />
         <ul className="space-y-2">
           {posts.map((p) => (
             <li
               key={p._id}
-              className="border p-2 rounded flex justify-between items-center"
+              className="border space-x-1 p-2 rounded flex justify-between items-center"
             >
               <div>
                 <strong>{p.title}</strong> - {p.content}
