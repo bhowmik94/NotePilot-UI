@@ -6,7 +6,7 @@ import Posts from "./pages/Posts";
 import EditPost from "./pages/EditPost";
 import ProtectedRoute from "./routes/ProtectedRoute";
 import AuthRoute from "./routes/AuthRoute";
-import { Analytics } from "@vercel/analytics/next";
+import { Analytics } from "@vercel/analytics/react";
 
 function App() {
   return (
